@@ -22,9 +22,7 @@ inv <- NULL
 
 cacheSolve <- function(x, ...) {
         inv <- x$getinv()
-  if(!is.null(inv)) 
-## tests whether the matrix was cached or not.
-{
+  if(!is.null(inv)) {
     message("it's cached result!")
     return(inv)
   }
